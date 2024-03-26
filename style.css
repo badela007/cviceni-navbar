@@ -27,51 +27,38 @@ a:hover {
 	color: #3498db;
 }
 
+/* Název webu v hlavičce je na levé straně a navigace na pravé
+Název webu má padding 10px nahoře a dole a 20px po stranách. Velikost písma je 30px, tučně a velkým písmem (toto udělejte v CSS, ne změnou HTML obashu)
+Položky v navigaci jsou vedle sebe, mají margin 1px, žadný padding
+Odkazy v seznamu zabírají celou výšku rodiče a jsou vertikálně vycentrované */
+
 .hlavicka {
 	display: flex;
 	justify-content: space-between;
 }
 
-.navbar {
-	display: flex;
-	margin: 1px;
-}
-
 .logo {
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
 	text-transform: uppercase;
+	padding: 10px 20px;
 	font-size: 30px;
-	font-weight: bold;
-	padding: 10px;
-	top: 20px;
-	bottom: 20px;
+	font-family: bold;
 }
 
 .navbar {
 	display: flex;
 	margin: 1px;
+	padding: 0;
 }
 
-.uvod {
+li {
+	display: flex;
+	list-style: none;
+	align-items: stretch;
+	margin: 1px;
+}
+
+a {
 	display: flex;
 	align-items: center;
-}
 
-.sluzby {
-	display: flex;
-	align-items: center;
 }
-
-.nastym {
-	display: flex;
-	align-items: center;
-}
-
-.kontakt {
-	display: flex;
-	align-items: center;
-}
-
-/* ---------------------------------------------------- */
